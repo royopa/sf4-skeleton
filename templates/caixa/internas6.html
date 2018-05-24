@@ -1,0 +1,202 @@
+{% extends "caixa/_base.html" %}
+{% block content %}
+    <main>
+      <div class="content">
+        <aside>
+          <div class="logo">
+            <img src="./images/logo_temp.jpg" alt="">
+          </div>
+          <h2>Nome do Sistema</h2>
+
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="" title="Item de Menu">Item de Menu</a>
+                <ul>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" title="Item de Menu">Item de Menu</a>
+                <ul>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                    <ul>
+                      <li>
+                        <a href="" title="Item de Menu">Item de Menu</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <section>
+          <p class="breadcrumb">
+            <strong>Você está em</strong>
+            <a href="" title="Home">Home</a> 
+            <a href="" title="Lorem Ipsum dolor">Lorem Ipsum dolor</a> Sit amet consectetur</p>
+
+
+          <h3 class="titulo">Área de gestão</h3>
+
+          <div class="secao">
+            <div class="alert alert-success alert-dismissible fade in" role="alert"> 
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> 
+              <strong>Você tem 85 solicitações pendentes de aprovação</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor 
+  sit amet lacus accumsan et viverra justo commodo.
+            </div>
+
+            <div class="formUsuarios">
+              <table class="usuarios">
+                
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="./images/gr_usuario.png" alt="">
+                    </td>
+                    <td><strong>Bruno de Almeida Vaz</strong> | CPF: 000.000.000-00 | AG. 1234 CC. 12345-6 | dd/mm/aaaa</td>
+
+                    <td class="acoes">
+                      <a href="#" class="reprovar" title="Reprovar">Reprovar</a>
+                      <a href="#" class="aprovar" title="Aprovar">Aprovar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./images/gr_usuario.png" alt="">
+                    </td>
+                    <td><strong>Bruno de Almeida Vaz</strong> | CPF: 000.000.000-00 | AG. 1234 CC. 12345-6 | dd/mm/aaaa</td>
+
+                    <td class="acoes">
+                      <a href="#" class="reprovar" title="Reprovar">Reprovar</a>
+                      <a href="#" class="aprovar" title="Aprovar">Aprovar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./images/gr_usuario.png" alt="">
+                    </td>
+                    <td><strong>Bruno de Almeida Vaz</strong> | CPF: 000.000.000-00 | AG. 1234 CC. 12345-6 | dd/mm/aaaa</td>
+
+                    <td class="acoes">
+                      <a href="#" class="reprovar" title="Reprovar">Reprovar</a>
+                      <a href="#" class="aprovar" title="Aprovar">Aprovar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="./images/gr_usuario.png" alt="">
+                    </td>
+                    <td><strong>Bruno de Almeida Vaz</strong> | CPF: 000.000.000-00 | AG. 1234 CC. 12345-6 | dd/mm/aaaa</td>
+
+                    <td class="acoes">
+                      <a href="#" class="reprovar" title="Reprovar">Reprovar</a>
+                      <a href="#" class="aprovar" title="Aprovar">Aprovar</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#" class="verMais" title="Leia mais">Leia mais</a>
+            </div>
+          </div>
+
+
+
+          
+
+          <h3 class="titulo">Título do Formulário</h3>
+
+          <div class="formulario">
+            <h6>Formulário</h6>
+            <p>*Campos obrigatórios</p>
+
+            <form data-toggle="validation" role="form">
+              <div class="row">
+                <div class="col-xs-6">
+                  <span class="required">*</span>
+                  <input type="text">
+                </div>
+                <div class="col-xs-6">
+                  <span class="required">*</span>
+                  <input type="text" placeholder="Lorem Ipsum">
+                </div>
+              </div>
+            </form>
+
+            <form data-toggle="validation" role="form">
+              <div class="row">
+                <div class="col-xs-6">
+                  <span class="required">*</span>
+                  <input type="text">
+                </div>
+                <div class="col-xs-6">
+                  <span class="required">*</span>
+                  <input type="text" placeholder="Lorem Ipsum">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <span class="required">*</span>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="row acoes">
+                <a href="#" title="Cancelar" class="btn-primary">Cancelar</a>
+                <button class="btn-warning">Continuar</button>
+              </div>
+            </form>
+
+          </div>
+
+          <div class="secao">
+
+            <div class="grafico_interno">
+
+              <canvas id="canvas"></canvas>
+            </div>
+            <div class="sidebar">
+              <div class="cont_calendario">
+                <div id="calendario"></div>
+
+                <div class="evento">
+                  <h5>Eventos do mês</h5>
+                  <div class="conteudo">
+                    <h6>14/03/2011 - <strong>Nome do Evento</strong></h6>
+                    <p>Curabitur placeraante velitvel. Donec ac auctor nee. Morbi bibent sem. </p>
+                    <a href="#" class="verMais" title="Leia mais">Leia mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="paginacaoGeral" aria-label="Page navigation">
+            <ul class="pagination">
+              <li>
+                <a href="#" class="proximo" aria-label="Previous">
+                  anterior
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" class="anterior" aria-label="Next">
+                  próximo
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </main>
+ 
+{% endblock %}

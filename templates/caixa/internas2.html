@@ -1,0 +1,136 @@
+{% extends "caixa/_base.html" %}
+{% block content %}
+    <main>
+      <div class="content">
+        <aside>
+          <div class="logo">
+            <img src="./images/logo_temp.jpg" alt="">
+          </div>
+          <h2>Nome do Sistema</h2>
+
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="" title="Item de Menu">Item de Menu</a>
+                <ul>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" title="Item de Menu">Item de Menu</a>
+                <ul>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                    <ul>
+                      <li>
+                        <a href="" title="Item de Menu">Item de Menu</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <section>
+          <p class="breadcrumb">
+            <strong>Você está em</strong>
+            <a href="" title="Home">Home</a> 
+            <a href="" title="Lorem Ipsum dolor">Lorem Ipsum dolor</a> Sit amet consectetur</p>
+
+
+          <h3 class="titulo">Internas 1</h3>
+
+          <div class="filtro">
+            <form action="" role="form" data-toggle="validation">
+
+              <select>
+                <option value="">Lorem Ipsum</option>
+              </select>
+              <select>
+                <option value="">Lorem Ipsum</option>
+              </select>
+              <select>
+                <option value="">Lorem Ipsum</option>
+              </select>
+
+              <button type="submit">Filtrar</button>
+            </form>
+          </div>
+
+          <table st-table="rowCollection" class="table table-striped">
+            <thead>
+            <tr>
+              <th>Item 1</th>
+              <th>Item 2</th>
+              <th>Item 3</th>
+              <th>Item 4</th>
+              <th>Item 5</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- ngRepeat: row in rowCollection -->
+            <tr ng-repeat="row in rowCollection" class="ng-scope">
+              <td class="ng-binding">Lorem Ipsum Dolor</td>
+              <td class="ng-binding">001/2011</td>
+              <td class="ng-binding">Sit Amet</td>
+              <td class="ng-binding">Lorem ipsum dolor dolor sit amet consectetur</td>
+              <td class="ng-binding">Sit Amet</td>
+            </tr>
+            <tr ng-repeat="row in rowCollection" class="ng-scope">
+              <td class="ng-binding">Lorem Ipsum Dolor</td>
+              <td class="ng-binding">001/2011</td>
+              <td class="ng-binding">Sit Amet</td>
+              <td class="ng-binding">Lorem ipsum dolor dolor sit amet consectetur</td>
+              <td class="ng-binding">Sit Amet</td>
+            </tr>
+            <tr ng-repeat="row in rowCollection" class="ng-scope">
+              <td class="ng-binding">Lorem Ipsum Dolor</td>
+              <td class="ng-binding">001/2011</td>
+              <td class="ng-binding">Sit Amet</td>
+              <td class="ng-binding">Lorem ipsum dolor dolor sit amet consectetur</td>
+              <td class="ng-binding">Sit Amet</td>
+            </tr>
+            <tr ng-repeat="row in rowCollection" class="ng-scope">
+              <td class="ng-binding">Lorem Ipsum Dolor</td>
+              <td class="ng-binding">001/2011</td>
+              <td class="ng-binding">Sit Amet</td>
+              <td class="ng-binding">Lorem ipsum dolor dolor sit amet consectetur</td>
+              <td class="ng-binding">Sit Amet</td>
+            </tr>
+            </tbody>
+          </table>
+
+
+          <div class="noticias">
+            <div class="row">
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="./images/gr_noticia_temp.jpg" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="./images/gr_noticia_temp.jpg" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="./images/gr_noticia_temp.jpg" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+ 
+    {% endblock %}

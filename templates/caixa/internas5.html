@@ -1,0 +1,174 @@
+{% extends "caixa/_base.html" %}
+{% block content %}
+    <main>
+      <div class="content">
+        <aside>
+          <div class="logo">
+            <img src="./images/logo_temp.jpg" alt="">
+          </div>
+          <h2>Nome do Sistema</h2>
+
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="" title="Item de Menu">Item de Menu</a>
+                <ul>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" title="Item de Menu">Item de Menu</a>
+                <ul>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                    <ul>
+                      <li>
+                        <a href="" title="Item de Menu">Item de Menu</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" title="Item de Menu">Item de Menu</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <section>
+          <p class="breadcrumb">
+            <strong>Você está em</strong>
+            <a href="" title="Home">Home</a> 
+            <a href="" title="Lorem Ipsum dolor">Lorem Ipsum dolor</a> Sit amet consectetur</p>
+
+          
+          <div class="sidebar">
+
+            <div class="item artigos">
+              <h4>Dolar Amet</h4>
+              <ul>
+                <li>
+                  <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+                </li>
+                <li>
+                  <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+                </li>
+                <li>
+                  <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+                </li>
+              </ul>
+              <a href="#" class="verMais" title="Leia mais">Leia mais</a>
+            </div>
+            <div class="lista_post item">
+              <h4>Lorem ipsum Dolar</h4>
+              <div class="post">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+              </div>
+              <div class="post">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+              </div>
+              <div class="post">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+              </div>
+
+              <a href="#" class="verMais" title="Leia mais">Leia mais</a>
+            </div>
+          </div>
+
+          <div class="principal">
+            <h3 class="titulo">Área de gestão</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+            
+            <div class="duasTabelas">
+              <div class="row">
+                <table st-table="rowCollection" class="table table-striped">
+                  <thead>
+                  <tr>
+                    <th>Item 1</th>
+                    <th>Item 2</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <!-- ngRepeat: row in rowCollection -->
+                  <tr ng-repeat="row in rowCollection" class="ng-scope">
+                    <td class="ng-binding">Lorem Ipsum Dolor</td>
+                    <td class="ng-binding">001/2011</td>
+                  </tr>
+                  <tr ng-repeat="row in rowCollection" class="ng-scope">
+                    <td class="ng-binding">Lorem Ipsum Dolor</td>
+                    <td class="ng-binding">001/2011</td>
+                  </tr>
+                  <tr ng-repeat="row in rowCollection" class="ng-scope">
+                    <td class="ng-binding">Lorem Ipsum Dolor</td>
+                    <td class="ng-binding">001/2011</td>
+                  </tr>
+                  <tr ng-repeat="row in rowCollection" class="ng-scope">
+                    <td class="ng-binding">Lorem Ipsum Dolor</td>
+                    <td class="ng-binding">001/2011</td>
+                  </tr>
+                  </tbody>
+                </table>
+                <table st-table="rowCollection" class="table table-striped">
+                  <thead>
+                  <tr>
+                    <th>Item 1</th>
+                    <th>Item 2</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <!-- ngRepeat: row in rowCollection -->
+                  <tr ng-repeat="row in rowCollection" class="ng-scope">
+                    <td class="ng-binding">Lorem Ipsum Dolor</td>
+                    <td class="ng-binding">001/2011</td>
+                  </tr>
+                  <tr ng-repeat="row in rowCollection" class="ng-scope">
+                    <td class="ng-binding">Lorem Ipsum Dolor</td>
+                    <td class="ng-binding">001/2011</td>
+                  </tr>
+                  <tr ng-repeat="row in rowCollection" class="ng-scope">
+                    <td class="ng-binding">Lorem Ipsum Dolor</td>
+                    <td class="ng-binding">001/2011</td>
+                  </tr>
+                  <tr ng-repeat="row in rowCollection" class="ng-scope">
+                    <td class="ng-binding">Lorem Ipsum Dolor</td>
+                    <td class="ng-binding">001/2011</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="noticias">
+            <div class="row">
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="./images/gr_noticia_temp.jpg" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="./images/gr_noticia_temp.jpg" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="./images/gr_noticia_temp.jpg" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+{% endblock %}

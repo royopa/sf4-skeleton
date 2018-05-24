@@ -1,0 +1,38 @@
+<nav class="menu-horizontal">
+    <div class="content">
+        <ul>
+            {% if current_user.is_authenticated %}
+            <li>
+                <a href="{{ url_for('main.interna1')}}" title="">Interna 1</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna2')}}" title="">Interna 2</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna3')}}" title="">Interna 3</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna4')}}" title="">Interna 4</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna5')}}" title="">Interna 5</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna6')}}" title="">Interna 6</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna6')}}" title="">Interna 7</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna6')}}" title="">Interna 8</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna6')}}" title="">Interna 9</a>
+            </li>
+            <li>
+                <a href="{{ url_for('main.interna6')}}" title="">Interna 10</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

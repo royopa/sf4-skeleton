@@ -37,7 +37,7 @@ yarn-error.log
 ###< friendsofphp/php-cs-fixer ###
 
 ###> symfony/webpack-encore-pack ###
-/assets/node_modules/
+/public/node_modules/
 /node_modules/
 /public/build/
 npm-debug.log

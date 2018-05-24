@@ -1,0 +1,114 @@
+{% extends "caixa/_base.html" %}
+{% block content %}
+    <main>
+      <div class="content">
+        <section class="full">
+
+          <div class="secao">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="{{url_for('static', filename='images/banner_home.jpg')}}" alt="...">
+                  <div class="carousel-caption">
+                    <h3>Título do destaque</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                  </div>
+                </div>
+                <div class="item">
+
+                  <img src="{{url_for('static', filename='images/banner_home.jpg')}}" alt="...">
+                  <div class="carousel-caption">
+                    <h3>Título do destaque</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="{{url_for('static', filename='images/banner_home.jpg')}}" alt="...">
+                  <div class="carousel-caption">
+                    <h3>Título do destaque</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar">
+
+              <div class="item artigos">
+                <h4>Dolar Amet</h4>
+                <ul>
+                  <li>
+                    <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+                  </li>
+                </ul>
+                <a href="#" class="verMais" title="Leia mais">Leia mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="secao">
+            <div class="grafico">
+              <h5>Título do destaque de informação</h5>
+
+              <canvas id="canvas"></canvas>
+            </div>
+          </div>
+
+          
+          <div class="secao">
+              <div class="noticia_destaque">
+                <h5>Nome do item de menu</h5>
+                <img src="{{url_for('static', filename='images/gr_noticia_destaque.jpg')}}" alt="">
+                <div class="conteudo">
+                  <div class="texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo coznsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo coznsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                  </div>
+                  <a href="#" class="verMais" title="Leia mais">Leia mais</a>
+                </div>
+              </div>
+          </div>
+          
+          
+          <div class="noticias">
+            <div class="row">
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="{{url_for('static', filename='images/gr_noticia_temp.jpg')}}" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="{{url_for('static', filename='images/gr_noticia_temp.jpg')}}" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+              <div class="col-xs-4 noticia">
+                <h5>Dolor Amet</h5>
+                <img src="{{url_for('static', filename='images/gr_noticia_temp.jpg')}}" alt="">
+                <p>Lorem ipsum dolvor sit amet, consectetur adipiscing elit. Proin semper, leo eget sodales blandi.</p>
+                <a href="#" class="bt-leiaMais" title="Leia mais">Leia mais</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main> 
+
+{% endblock %}

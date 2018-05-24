@@ -1,0 +1,66 @@
+<header>
+    <div class="content">
+        <h1>
+            <a href="{{ path('homepage') }}" title="">Caixa</a>
+        </h1>
+
+        {% if app.user %}
+        <h2>Olá, <strong>{{ app.user.fullName }}</strong></h2>
+        {% endif %}
+
+        <ul>
+            {% if app.user %}
+            <li class="item-sair">
+                <a href="{{ path('security_logout') }}" title="Sair"><em class="fa fa-power-off"></em> Sair</a>
+            </li>
+            {% else %}
+            <li class="item-sair">
+                <a href="{{ path('security_login') }}" title="Entrar">Entrar</a>
+            </li>
+            {% endif %}
+
+            {% if app.user %}
+            <li class="item-config">
+                <a href="#" title="Configurações">Configurações</a>
+            </li>
+            <li class="item-pesquisa">
+                <a href="#" title="Pesquisa">Pesquisa</a>
+            </li>
+            {% endif %}
+            <li class="item-calendario">
+                <a href="#" title="Calendário">Calendário</a>
+            </li>
+        </ul>
+
+        <div class="pesquisa sub-item">
+            <form role="form" data-toggle="validation">
+                <label for="txt_pesquisa">O que você está procurando?</label>
+                <input id="txt_pesquisa" type="text" required>
+                <button type="submit">Buscar</button>
+            </form>
+
+        </div>
+
+        <div class="calendario sub-item">
+            <div id="calendarioHeader"></div>
+        </div>
+
+        <div class="config sub-item">
+            <h5>Ferramentas</h5>
+            <ul>
+                <li>
+                    <a href="#" title="">Ferramenta de configuração</a>
+                </li>
+                <li>
+                    <a href="#" title="">Ferramenta de configuração</a>
+                </li>
+                <li>
+                    <a href="#" title="">Ferramenta de configuração</a>
+                </li>
+                <li>
+                    <a href="#" title="">Ferramenta de configuração</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
