@@ -23,6 +23,7 @@ $ cd sf4-skeleton/
 $ composer instal
 $ npm instal
 $ yarn newinstall
+$ ./node_modules/.bin/encore dev-server
 ```
 
 Usage
