@@ -6923,6 +6923,7 @@ button.list-group-item-danger.active:hover {
 
 .well {
     min-height: 20px;
+    margin-top: 20px;
     padding: 19px;
     margin-bottom: 20px;
     background-color: #f5f5f5;
@@ -9361,7 +9362,7 @@ footer {
     background-image: url(../images/bg_footer.jpg);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 1680px 59px;
+    background-size: 1926px 59px;
     color: #fff;
     height: 59px;
     padding-top: 12px;

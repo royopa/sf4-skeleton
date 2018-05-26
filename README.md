@@ -10,7 +10,6 @@ Requirements
   * YARN;
   * PHP 7.1.3 or higher;
   * PDO-SQLite PHP extension enabled;
-  * and the [usual Symfony application requirements][1].
 
 Installation
 ------------
@@ -52,6 +51,3 @@ Execute this command to run tests:
 $ cd sf4-skeleton/
 $ ./vendor/bin/simple-phpunit
 ```
-
-[1]: https://symfony.com/doc/current/reference/requirements.html
-[2]: https://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
