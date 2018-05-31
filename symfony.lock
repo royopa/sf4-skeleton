@@ -305,9 +305,6 @@
     "symfony/intl": {
         "version": "v3.4.0-beta2"
     },
-    "symfony/ldap": {
-        "version": "v4.1.0-beta2"
-    },
     "symfony/lts": {
         "version": "4-dev"
     },
