@@ -19,10 +19,10 @@ Execute this command to install the project:
 ```bash
 $ git clone /s4-skeleton
 $ cd sf4-skeleton/
-$ composer instal
+$ composer install
 $ npm instal
 $ yarn newinstall
-$ ./node_modules/.bin/encore dev-server
+$ yarn run encore production
 ```
 
 Usage
@@ -41,6 +41,17 @@ $ php bin/console server:run
 $ cd sf4-skeleton/
 $ php bin/console server:start 0.0.0.0:8000
 ```
+
+Generate CRUDS
+--------------
+
+To generate CRUDs from entities, type the follow command:
+
+```bash
+$ php bin/console list make
+$ php bin/console make:crud
+```
+
 
 Tests
 -----
