@@ -4,15 +4,9 @@
 
 {% block body %}
 
-<main>
-   <div class="content">
-      <section class="full">
          <div class="secao">
             <h3 class="titulo">Nova Unidade</h3>
             {{ include('unidade/_form.html.twig') }}
-            <a href="{{ path('unidade_index') }}">back to list</a>
         </div>
-      </section>
-   </div>
-</main>
+
 {% endblock %}

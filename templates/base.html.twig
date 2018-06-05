@@ -20,18 +20,16 @@
         {% include 'header.html.twig' %}
         {% include 'navbar.html.twig' %}
 
-        <div class="container body-container">
-            {% block body %}
-                <div class="row">
-                    <div id="main" class="col-sm-9">
-                        {{ include('default/_flash_messages.html.twig') }}
-                        {% block main %}{% endblock %}
-                    </div>
-                </div>
-            {% endblock %}
-        </div>
-
-        {% block content %}{% endblock %}
+        {% block content %}
+        <main>
+            <div class="content">
+                {{ include('default/_flash_messages.html.twig') }}
+                <section class="full">
+                    {% block body %}{% endblock %}
+                </section>
+            </div>
+        </main>
+        {% endblock %}
 
         {% include 'footer.html.twig' %}
 

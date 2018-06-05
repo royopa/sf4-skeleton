@@ -29,6 +29,7 @@ class UserController extends Controller
     public function new(Request $request): Response
     {
         $user = new User();
+        $user->setPassword('senhaNaoUtilizada');
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
@@ -36,6 +37,11 @@ class UserController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
+
+            $this->addFlash(
+                'notice',
+                'Usuário adicionado com sucesso!'
+            );
 
             return $this->redirectToRoute('user_index');
         }
