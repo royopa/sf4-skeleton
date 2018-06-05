@@ -63,18 +63,27 @@ class Authenticator implements SimpleFormAuthenticatorInterface
     private function getDadosUsuario(User $user)
     {
         # password ok, então pega os dados do usuário da API LDAP
-        $default_socket_timeout = ini_get('default_socket_timeout');
-        ini_set('default_socket_timeout', 5);
+        $client = new \GuzzleHttp\Client([
+            'headers' => [
+                'Content-Type' => 'application/json',
+                'User-Agent' => 'Mozilla/4.0'
+            ]
+        ]);
+        
         $url = $this->urlApiUser . $user->getUsername();
-        $json = @file_get_contents($url);
-        $userData = json_decode($json, true);
+        $res = $client->request('GET', $url);
+        echo $res->getStatusCode();
+        // 200
+        echo $res->getHeaderLine('content-type');
+        // 'application/json; charset=utf8'
+        echo $res->getBody();
+        $userData = json_decode($res->getBody(), true);
 
         if ($userData == null) {
             throw new CustomUserMessageAuthenticationException(error_get_last()["message"]);
         }
 
         $user->setFullName($userData["nome"]);
-        ini_set('default_socket_timeout', $default_socket_timeout);
         return $user;
     }
 

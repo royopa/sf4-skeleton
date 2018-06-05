@@ -27,9 +27,11 @@ class Validator
             throw new InvalidArgumentException('The username can not be empty.');
         }
 
+        /*
         if (1 !== preg_match('/^[a-z_]+$/', $username)) {
             throw new InvalidArgumentException('The username must contain only lowercase latin characters and underscores.');
         }
+        */
 
         return $username;
     }

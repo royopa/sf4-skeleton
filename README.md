@@ -20,9 +20,9 @@ Execute this command to install the project:
 $ git clone /s4-skeleton
 $ cd sf4-skeleton/
 $ composer install
-$ npm instal
-$ yarn newinstall
-$ yarn run encore production
+$ npm instal --verbose
+$ yarn newinstall --verbose
+$ yarn run encore production --verbose
 ```
 
 Usage
@@ -34,6 +34,8 @@ browser at <http://localhost:8000>:
 
 ```bash
 $ cd sf4-skeleton/
+$ php bin/console doctrine:database:create
+$ php bin/console doctrine:schema:create
 $ php bin/console server:run
 ```
 
@@ -52,6 +54,15 @@ $ php bin/console list make
 $ php bin/console make:crud
 ```
 
+
+Adicionar usuários
+------------------
+
+```bash
+$ php bin/console app:add-user
+$ php bin/console app:delete-user
+$ php bin/console app:list-users
+```
 
 Tests
 -----

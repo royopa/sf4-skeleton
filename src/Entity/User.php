@@ -85,11 +85,17 @@ class User implements UserInterface, \Serializable
 
     public function getFullName(): string
     {
+        if ($this->fullName == null) {
+            return '';
+        }
         return $this->fullName;
     }
 
     public function getUsername(): string
     {
+        if ($this->username == null) {
+            return '';
+        }
         return $this->username;
     }
 
@@ -100,6 +106,10 @@ class User implements UserInterface, \Serializable
 
     public function getEmail(): string
     {
+        if ($this->email == null) {
+            return '';
+        }
+
         return $this->email;
     }
 
@@ -110,12 +120,36 @@ class User implements UserInterface, \Serializable
 
     public function getPassword(): string
     {
+        if ($this->password == null) {
+            return '';
+        }
+
         return $this->password;
     }
 
     public function setPassword(string $password): void
     {
         $this->password = $password;
+    }
+
+    /**
+     * Returns the roles or permissions granted to the user for security.
+     */
+    public function getRolesString(): array
+    {
+        $roles = $this->roles;
+
+        // guarantees that a user always has at least one role for security
+        if (empty($roles)) {
+            $roles[] = 'ROLE_USER';
+        }
+
+        $saida = "";
+        foreach (array_unique($roles) as $key => $role) {
+            $saida = $saida + ' ';
+        }
+
+        return $saida;
     }
 
     /**
